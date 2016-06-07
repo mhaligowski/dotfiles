@@ -1,0 +1,9 @@
+[user]
+	email = mhaligowski@gmail.com
+	name = Mateusz Haligowski
+[push]
+	default = simple
+[core]
+	editor = vim
+	pager = cat
+	excludesfile = /Users/mhaligowski/.gitignore

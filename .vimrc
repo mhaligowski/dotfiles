@@ -10,8 +10,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
-Plugin 'scrooloose/nerdtree'
 Plugin 'klen/python-mode'
+Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on
 

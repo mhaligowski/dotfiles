@@ -49,12 +49,13 @@ ZSH_THEME="obraun"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git aws docker httpie mvn python tmux aws)
+plugins=(git docker httpie mvn python tmux aws rails)
 
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH=$PATH:"/usr/local/go/bin"
+export PATH="$PATH:$HOME/go_appengine"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -86,3 +87,17 @@ source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="/Users/mhaligowski/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export PATH="/usr/local/sbin:$PATH"
+alias restart-modem="http http://192.168.100.1/reset.htm?reset_modem=Restart+Cable+Modem"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/mhaligowski/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/mhaligowski/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/mhaligowski/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/mhaligowski/google-cloud-sdk/completion.zsh.inc'
+fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

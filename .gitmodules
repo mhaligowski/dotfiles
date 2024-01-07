@@ -1,0 +1,3 @@
+[submodule "vim-catpuccin"]
+	path = vim-catpuccin
+	url = https://github.com/catppuccin/vim.git
